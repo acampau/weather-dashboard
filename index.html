@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="Description" content="Enter your description here" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/css/bootstrap.min.css"
+    />
+    <title>Weather Dashboard</title>
+  </head>
+
+  <body>
+    <header class="jumbotron jumbotron-fluid bg-info text-warning">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-12">
+            <h1>Weather Dashboard</h1>
+            <form id="city-form">
+              <input type="text" name="city" id="city-name" />
+              <button type="submit">Enter City Name</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="row bg-info">
+        <div class="col-12 current-weather">
+          <section class="row justify-content-around">
+            <div class="col-12 my-4">
+              <div class="card">
+                <h3 class="card-header bg-warning text-white">
+                  <span id="current-weather-city"></span>
+                  <img id="current-weather-icon" />
+                  <p>
+                    <span id="current-weather-date"></span>
+                  </p>
+                </h3>
+                <div class="card-body text-info">
+                  <ul class="card-text" style="list-style-type: none">
+                    <li>
+                      Temperature:
+                      <span id="current-weather-temp"></span> Farenheit
+                    </li>
+                    <li>
+                      Humidity: <span id="current-weather-humidity"></span>%
+                    </li>
+                    <li>
+                      Wind speed: <span id="current-weather-wind"></span> mph
+                    </li>
+                    <li>UV Index: <span id="current-weather-uvi"></span></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4 mb-3">
+              <div class="card bg-warning text-white">
+                <div class="card-text">
+                  <ul style="list-style-type: none">
+                    <li><span id="forecast-date-0"></span></li>
+                    <li><img id="forecast-icon-0" /></li>
+                    <li>
+                      Temperature: <span id="forecast-temp-0"></span> Farenheit
+                    </li>
+                    <li>Humidity: <span id="forecast-humidity-0"></span>%</li>
+                    <li>Wind speed: <span id="forecast-wind-0"></span> mph</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4 mb-3">
+              <div class="card bg-warning text-white">
+                <div class="card-text">
+                  <ul style="list-style-type: none">
+                    <li><span id="forecast-date-1"></span></li>
+                    <li><img id="forecast-icon-1" /></li>
+                    <li>
+                      Temperature: <span id="forecast-temp-1"></span> Farenheit
+                    </li>
+                    <li>Humidity: <span id="forecast-humidity-1"></span>%</li>
+                    <li>Wind speed: <span id="forecast-wind-1"></span> mph</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4 mb-3">
+              <div class="card bg-warning text-white">
+                <div class="card-text">
+                  <ul style="list-style-type: none">
+                    <li><span id="forecast-date-2"></span></li>
+                    <li><img id="forecast-icon-2" /></li>
+                    <li>
+                      Temperature: <span id="forecast-temp-2"></span> Farenheit
+                    </li>
+                    <li>Humidity: <span id="forecast-humidity-2"></span>%</li>
+                    <li>Wind speed: <span id="forecast-wind-2"></span> mph</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4 mb-3">
+              <div class="card bg-warning text-white">
+                <div class="card-text">
+                  <ul style="list-style-type: none">
+                    <li><span id="forecast-date-3"></span></li>
+                    <li><img id="forecast-icon-3" /></li>
+                    <li>
+                      Temperature: <span id="forecast-temp-3"></span> Farenheit
+                    </li>
+                    <li>Humidity: <span id="forecast-humidity-3"></span>%</li>
+                    <li>Wind speed: <span id="forecast-wind-3"></span> mph</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4 mb-3">
+              <div class="card bg-warning text-white">
+                <div class="card-text">
+                  <ul style="list-style-type: none">
+                    <li><span id="forecast-date-4"></span></li>
+                    <li><img id="forecast-icon-4" /></li>
+                    <li>
+                      Temperature: <span id="forecast-temp-4"></span> Farenheit
+                    </li>
+                    <li>Humidity: <span id="forecast-humidity-4"></span>%</li>
+                    <li>Wind speed: <span id="forecast-wind-4"></span> mph</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="./js/script.js"></script>
+  </body>
+</html>
